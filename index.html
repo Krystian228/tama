@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PODGLĄD na GitHub Pages: blokada indeksowania. Usunąć przed publikacją na tamarillo.pl -->
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<title>Catering Tamarillo – catering na komunie, wesela i przyjęcia | Wejherowo, Trójmiasto</title>
+<meta name="description" content="Catering Tamarillo z Wejherowa: komunie, wesela, BOX-y finger food i przyjęcia z dowozem w Wejherowie, Trójmieście i okolicach. Zadzwoń: 888 015 703.">
+<link rel="canonical" href="https://tamarillo.pl/">
+<meta property="og:title" content="Catering Tamarillo – nie kusimy promocjami, lecz dużymi porcjami">
+<meta property="og:description" content="Komunie, wesela, BOX-y finger food i przyjęcia z dowozem. Wejherowo i Trójmiasto.">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tamarillo.pl/img/og-tamarillo.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#FCFBF8">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/favicon-180.png">
+
+<!-- Obraz LCP: ładowany od razu -->
+<link rel="preload" as="image" type="image/webp" href="img/bufet-hero-1080.webp" imagesrcset="img/bufet-hero-600.webp 600w, img/bufet-hero-1080.webp 1080w" imagesizes="(min-width:1000px) 480px, 90vw">
+
+<!-- FONTY – wersja produkcyjna (RODO, bez Google). Po dodaniu plików z fonts/README.md odkomentuj: -->
+<!-- <link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin> -->
+<!-- <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin> -->
+<!-- <link rel="stylesheet" href="fonts/fonts.css"> -->
+
+<!-- TYLKO PODGLĄD: Google Fonts. Usunąć przed publikacją (RODO), patrz fonts/README.md -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- TYLKO PODGLĄD -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600&display=swap"><!-- TYLKO PODGLĄD -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Catering Tamarillo",
+  "legalName": "CATERING TAMARILLO Joanna Nikielska",
+  "url": "https://tamarillo.pl/",
+  "logo": "https://tamarillo.pl/img/logo-tamarillo-560.png",
+  "image": "https://tamarillo.pl/img/og-tamarillo.jpg",
+  "telephone": "+48888015703",
+  "email": "tamarillo.wwo@wp.pl",
+  "slogan": "Nie kusimy promocjami, lecz dużymi porcjami",
+  "address": {"@type": "PostalAddress", "streetAddress": "ul. Morska 9A", "postalCode": "84-200", "addressLocality": "Wejherowo", "addressCountry": "PL"},
+  "areaServed": ["Wejherowo", "Reda", "Rumia", "Powiat wejherowski", "Gdynia", "Sopot", "Gdańsk"],
+  "servesCuisine": "Polska",
+  "sameAs": ["https://facebook.com/tamarillo.wejherowo"]
+}
+</script>
+
+<style>
+/* =========================================================
+   Tamarillo – landing v8 (po audycie UI/UX)
+   ========================================================= */
+
+/* Fallbacki z dopasowanymi metrykami: mniejszy skok układu, zanim wczytają się fonty */
+@font-face{font-family:'Serif Fallback';src:local('Georgia'),local('Times New Roman');size-adjust:92%;ascent-override:95%}
+@font-face{font-family:'Sans Fallback';src:local('Arial'),local('Helvetica');size-adjust:98%}
+
+:root{
+  --paper:#FCFBF8;
+  --stone:#F1EEE7;
+  --ink:#16130F;
+  --text:#3D3832;       /* tekst opisów: ciemniejszy niż pomocniczy */
+  --muted:#625C53;
+  --line:#E3DED4;
+  --gold:#D9B46A;
+  --gold-text:#85652A;
+  --gold-1:#E8CD8C;
+  --gold-2:#C99D4E;
+  --on-dark:#F4EFE4;
+  --on-dark-muted:#BDB7A9;
+  --error:#F0A08F;
+
+  --display:'Instrument Serif','Serif Fallback',Georgia,serif;
+  --sans:'Figtree','Sans Fallback',system-ui,-apple-system,'Segoe UI',sans-serif;
+
+  --max:1280px;
+  --gut:clamp(20px,4vw,40px);
+  --sec:clamp(72px,10vw,128px);
+}
+
+/* ===== Baza ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;padding-bottom:92px}
+img{display:block;max-width:100%}
+picture{display:contents}
+source{display:none}
+figure{margin:0}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(40px,5.4vw,72px);line-height:1}
+h3{font-size:clamp(28px,2.6vw,36px);line-height:1.05}
+p{margin:0}
+:focus-visible{outline:2px solid var(--gold-text);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--paper);padding:10px 16px;z-index:60;text-decoration:none}
+.skip:focus{top:12px}
+.w{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+
+/* ===== Przyciski i linki ===== */
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 26px;border-radius:2px;background:var(--ink);color:var(--paper);text-decoration:none;font:600 16px/1 var(--sans);border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:#2C2722}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:#E6C783}
+.link{font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;transition:color .2s}
+.link:hover{color:var(--gold-text)}
+
+/* ===== Nagłówek ===== */
+.nav{position:sticky;top:0;z-index:40;background:rgba(252,251,248,.92);backdrop-filter:blur(12px) saturate(1.3)}
+.nav-in{display:flex;align-items:center;gap:28px;min-height:76px}
+.brand img{height:38px;width:auto}
+/* napis w nagłówku ukryty, dopóki pełne logo z hero jest na ekranie (bez animacji) */
+.logo-in-view .brand{visibility:hidden}
+.links{display:none;list-style:none;margin:0 0 0 auto;padding:0;gap:4px}
+.links a{display:block;padding:10px 12px;text-decoration:none;font-weight:500;transition:color .2s}
+.links a:hover{color:var(--gold-text)}
+.nav .btn{margin-left:auto;min-height:46px;padding:0 16px}
+.nav .btn .num{display:none}
+
+/* ===== HERO ===== */
+.hero{padding:clamp(24px,4vw,56px) 0 var(--sec)}
+.hero-grid{display:grid;gap:56px;align-items:center}
+.hero-text{display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero-logo{width:clamp(200px,20vw,270px);height:auto}
+.hero h1{font-size:clamp(38px,4.4vw,62px);line-height:1.06;letter-spacing:-.015em;max-width:16ch;margin-top:clamp(20px,2.6vw,28px);text-wrap:balance}
+.swash{display:block;width:clamp(180px,18vw,240px);height:auto;aspect-ratio:300/36;margin-top:12px}
+.hero .sub{font-size:18px;color:var(--text);max-width:30em;margin-top:20px}
+.hero-cta{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px 28px;margin-top:30px}
+.hero-cta .btn{min-height:58px;padding:0 28px;font-size:18px}
+.proof{margin-top:22px;font-size:15px;color:var(--muted)}
+.proof a{color:var(--ink);text-underline-offset:4px;text-decoration-thickness:1px}
+.proof a:hover{color:var(--gold-text)}
+
+.table{position:relative;aspect-ratio:5/6;max-width:540px;width:100%;margin:0 auto}
+.table .main{position:absolute;inset:0 0 14% 12%;overflow:hidden;background:var(--stone)}
+.table img{width:100%;height:100%;object-fit:cover}
+.plate{position:absolute;border-radius:50%;overflow:hidden;border:6px solid var(--paper);box-shadow:0 22px 44px -20px rgba(22,19,15,.5);background:var(--stone)}
+.plate-1{width:44%;aspect-ratio:1;left:0;bottom:0}
+.plate-2{width:28%;aspect-ratio:1;right:-2%;top:-4%}
+
+/* ===== Sekcje ===== */
+section{padding:var(--sec) 0}
+.sec-head{display:grid;gap:20px;margin-bottom:clamp(40px,6vw,64px)}
+.sec-head p{color:var(--text);max-width:30em;font-size:18px}
+
+/* ===== OFERTA ===== */
+.offer{display:grid;gap:48px}
+.preview{display:none}
+.menu{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.item{display:grid;grid-template-columns:56px 1fr;gap:4px 16px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.item .thumb{width:56px;height:56px;border-radius:50%;object-fit:cover;grid-row:span 3;align-self:center}
+.item h3{font-size:clamp(26px,2.6vw,34px);transition:color .25s}
+.item:hover h3,.item:focus-visible h3{color:var(--gold-text)}
+.item p{grid-column:2 / -1;color:var(--text);font-size:16px;line-height:1.5;max-width:60ch}
+/* cena tylko tam, gdzie jest liczba; krój szeryfowy jak w menu */
+.price{font-family:var(--display);font-size:22px;line-height:1.2;white-space:nowrap;grid-column:2}
+.price small{font-family:var(--sans);font-size:14px;color:var(--muted)}
+.price-ask{font-size:14px;color:var(--muted);white-space:nowrap;grid-column:2}
+.offer-more{margin-top:28px;color:var(--text)}
+
+/* ===== BOX ===== */
+.box{background:linear-gradient(120deg,var(--gold-1) 0%,var(--gold) 48%,var(--gold-2) 100%);color:var(--ink)}
+.box-grid{display:grid;gap:40px;align-items:center}
+.box-photo{overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -30px rgba(70,48,10,.55);background:var(--stone)}
+.box-photo img{width:100%;height:100%;object-fit:cover}
+.box .eyebrow{font-weight:600;color:#4A3812}
+.box h2{margin-top:12px}
+.box .lead{color:#3B2F1F;margin-top:18px;max-width:28em;font-size:18px}
+.boxes{list-style:none;margin:32px 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.boxes li{display:flex;flex-direction:column;gap:2px;padding:16px 18px;border-radius:2px;background:rgba(255,253,247,.42);border:1px solid rgba(22,19,15,.10)}
+.boxes li span:first-child{font-weight:500}
+.boxes li span:last-child{font-family:var(--display);font-size:30px;line-height:1.1}
+.box .terms{color:#3B2F1F;font-size:16px;margin-bottom:24px}
+
+/* ===== UROCZYSTOŚCI ===== */
+.tabs{display:flex;gap:4px;box-shadow:inset 0 -1px 0 var(--line);margin-bottom:28px}
+.tab{font:600 16px/1 var(--sans);color:var(--muted);background:none;border:0;border-bottom:2px solid transparent;flex:0 1 auto;padding:14px 18px 16px;min-height:48px;line-height:1.25;text-align:center;cursor:pointer;transition:color .2s,border-color .2s}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--gold)}
+.tabpanel{animation:fade .3s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.panel-lead{color:var(--text);margin-bottom:24px;max-width:46em}
+.plans{display:grid;border-top:1px solid var(--ink)}
+.plan{padding:28px 0;border-bottom:1px solid var(--line);display:grid;gap:10px;align-content:start}
+.plan h3{font-style:italic}
+.amount{font-family:var(--display);font-size:clamp(64px,7vw,96px);line-height:.9;letter-spacing:-.02em}
+.amount small{font-family:var(--sans);font-size:16px;color:var(--muted);letter-spacing:0;margin-left:4px}
+.serving{font-family:var(--display);font-style:italic;font-size:24px;color:var(--gold-text);line-height:1.2}
+.plan ul{list-style:none;margin:6px 0 0;padding:0;color:var(--text);font-size:16px;display:grid;gap:6px}
+.plans-note{margin-top:28px;color:var(--text)}
+
+/* ===== GALERIA ===== */
+#realizacje{padding-top:0;padding-bottom:calc(var(--sec) + 56px)}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(10px,1.4vw,20px)}
+.g{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--stone)}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.g figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 14px 12px;font-size:14px;font-weight:500;line-height:1.35;color:#fff;background:linear-gradient(to top,rgba(22,19,15,.7),rgba(22,19,15,0))}
+/* na urządzeniach z myszą podpis pojawia się po najechaniu; na dotykowych jest zawsze widoczny */
+@media (hover:hover){
+  .g figcaption{opacity:0;transition:opacity .3s ease}
+  .g:hover figcaption{opacity:1}
+  .g:hover img{transform:scale(1.03)}
+}
+.g:nth-child(even){transform:translateY(clamp(24px,4vw,56px))}
+
+/* ===== KONTAKT ===== */
+.contact{background:var(--ink);color:var(--on-dark)}
+.contact h2{max-width:12em}
+.contact .how{color:var(--on-dark-muted);font-size:18px;max-width:34em;margin-top:20px}
+.bigphone{display:inline-block;font-family:var(--display);font-size:clamp(48px,7vw,96px);line-height:1;white-space:nowrap;letter-spacing:-.02em;color:var(--gold);text-decoration:none;margin-top:32px;transition:color .2s}
+.bigphone:hover{color:#E6C783}
+.swash-lg{width:clamp(240px,40vw,560px);margin-top:4px}
+.details{display:flex;flex-wrap:wrap;gap:8px 32px;margin-top:28px;font-style:normal;color:var(--on-dark-muted)}
+.details a{color:var(--on-dark)}
+.callback{margin-top:clamp(48px,7vw,80px);padding-top:36px;border-top:1px solid #2E2A25}
+.callback > p{font-size:20px;margin-bottom:20px}
+.cb-form{display:grid;gap:14px}
+.f{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--on-dark-muted)}
+.f input,.f select{font:500 16px/1.3 var(--sans);min-height:52px;padding:12px 16px;border:1px solid #4A443C;border-radius:2px;background:#221E1A;color:var(--on-dark);width:100%}
+.f input:focus,.f select:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(217,180,106,.25)}
+.f input[aria-invalid="true"]{border-color:var(--error)}
+.f-err{font-size:14px;color:var(--error);min-height:1.3em}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--on-dark-muted);grid-column:1 / -1;padding:4px 0;cursor:pointer}
+.consent input{width:22px;height:22px;margin:0;accent-color:var(--gold);flex:none}
+.consent a{color:var(--on-dark)}
+.consent.invalid{color:var(--error)}
+.cb-form .btn{align-self:start;justify-content:center;min-height:52px;margin-top:20px}
+.form-msg{grid-column:1 / -1;font-size:16px;min-height:1.5em}
+.form-msg[data-state="ok"]{color:#A9D59A}
+.form-msg[data-state="error"]{color:var(--error)}
+
+/* ===== Stopka ===== */
+footer{padding:56px 0 40px;font-size:15px;color:var(--muted)}
+.foot{display:grid;gap:32px}
+.foot-logo{width:140px;height:auto}
+.foot h3{font:600 15px/1.4 var(--sans);color:var(--ink);margin-bottom:8px;letter-spacing:0}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--gold-text);text-decoration:underline}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li a{display:inline-block;padding:6px 0}
+.legal{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:14px}
+
+/* ===== Pasek „Zadzwoń” (telefon) ===== */
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:50}
+.callbar .btn{width:100%;justify-content:center;min-height:58px;font-size:17px;box-shadow:0 10px 30px -8px rgba(22,19,15,.45)}
+/* ukryty, dopóki przycisk z hero jest na ekranie – zmiana stanu bez animacji */
+.cta-in-view .callbar{display:none}
+
+/* ===== Tablet ===== */
+@media (min-width:720px){
+  .boxes{grid-template-columns:repeat(3,1fr)}
+  .box-photo{aspect-ratio:4/3}
+  .plans{grid-template-columns:repeat(3,1fr);border-top:0}
+  .plan{border-bottom:0;border-top:1px solid var(--ink);padding:28px 28px 0 0}
+  .plan + .plan{padding-left:28px;border-left:1px solid var(--line)}
+  .cb-form{grid-template-columns:repeat(3,1fr) auto}
+  .cb-form .btn{margin-top:26px}
+  .sec-head{grid-template-columns:1.2fr 1fr;align-items:end}
+  .foot{grid-template-columns:1.2fr 1fr 1fr 1fr}
+}
+
+/* ===== Desktop ===== */
+@media (min-width:1000px){
+  body{padding-bottom:0}
+  .callbar{display:none}
+  .links{display:flex}
+  .nav .btn{margin-left:8px}
+  .nav .btn .num{display:inline}
+  .hero-grid{grid-template-columns:1fr 1fr;gap:64px}
+  .offer{grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+  .preview{display:block;position:sticky;top:104px;aspect-ratio:4/5;overflow:hidden;background:var(--stone)}
+  .preview img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+  .preview img[data-fading]{opacity:0}
+  .preview figcaption{position:absolute;left:16px;bottom:16px;background:rgba(252,251,248,.92);padding:6px 12px;border-radius:2px;font-size:14px;font-weight:500}
+  .item{grid-template-columns:1fr auto;padding:26px 0}
+  .price,.price-ask{grid-column:auto;text-align:right}
+  .price{font-size:24px}
+  .item .thumb{display:none}
+  .item p{grid-column:1 / -1}
+  .box-grid{grid-template-columns:1fr 1.1fr;gap:72px}
+  .box-photo{aspect-ratio:4/5}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .g:nth-child(even){transform:none}
+  .g:nth-child(3n+2){transform:translateY(56px)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="zloto" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#EAD39B" stop-opacity=".2"/><stop offset=".45" stop-color="#DDBB72"/><stop offset=".85" stop-color="#C99D4E"/><stop offset="1" stop-color="#B78A3B"/>
+    </linearGradient>
+    <!-- Pociągnięcie pędzla z litery „T” w logo -->
+    <symbol id="swash" viewBox="0 0 300 36"><path fill="url(#zloto)" d="M2 19 C80 25 170 33 236 31 C268 30 288 19 298 2 C293 17 273 26 238 27 C170 29 90 24 2 19 Z"/></symbol>
+    <symbol id="ico-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <div class="w nav-in">
+    <a class="brand" href="#top" aria-label="Catering Tamarillo – strona główna">
+      <picture><source srcset="img/logo-napis.webp" type="image/webp"><img src="img/logo-napis.png" alt="Tamarillo Catering" width="154" height="38"></picture>
+    </a>
+    <ul class="links">
+      <li><a href="#oferta">Oferta</a></li>
+      <li><a href="#box">BOX-y</a></li>
+      <li><a href="#uroczystosci">Komunie i wesela</a></li>
+      <li><a href="#realizacje">Realizacje</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="btn" href="tel:+48888015703" aria-label="Zadzwoń: 888 015 703"><svg aria-hidden="true"><use href="#ico-tel"/></svg><span class="num">888 015 703</span></a>
+  </div>
+</header>
+
+<main id="tresc">
+
+<!-- ===== HERO ===== -->
+<div class="hero" id="top">
+  <div class="w hero-grid">
+    <div class="hero-text">
+      <picture><source srcset="img/logo-tamarillo.webp" type="image/webp"><img class="hero-logo" src="img/logo-tamarillo-560.png" alt="Tamarillo Catering by Maciej Nikielski" width="560" height="508"></picture>
+      <h1 data-cms="hero.title">Nie kusimy promocjami, lecz dużymi porcjami.</h1>
+      <svg class="swash" aria-hidden="true"><use href="#swash"/></svg>
+      <p class="sub" data-cms="hero.subtitle">Komunie, wesela, przyjęcia i BOX-y z przekąskami. Kuchnia jak w domu, podana tak, żeby goście robili zdjęcia.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+48888015703" data-cms="contact.phone"><svg aria-hidden="true"><use href="#ico-tel"/></svg>Zadzwoń: 888 015 703</a>
+        <a class="link" href="#oferta">Zobacz ofertę</a>
+      </div>
+      <p class="proof">98% poleceń w <a href="https://www.facebook.com/tamarillo.wejherowo/reviews" rel="noopener">29 opiniach na Facebooku</a></p>
+    </div>
+
+    <div class="table">
+      <figure class="main"><picture>
+        <source type="image/webp" srcset="img/bufet-hero-600.webp 600w, img/bufet-hero-1080.webp 1080w" sizes="(min-width:1000px) 480px, 90vw">
+        <img src="img/bufet-hero-1080.jpg" srcset="img/bufet-hero-600.jpg 600w, img/bufet-hero-1080.jpg 1080w" sizes="(min-width:1000px) 480px, 90vw" alt="Bufet Tamarillo: drewniana skrzynka z przekąskami finger food, koszyk z kurczakiem i dip" width="1080" height="1270" fetchpriority="high">
+      </picture></figure>
+      <figure class="plate plate-1"><picture><source type="image/webp" srcset="img/owoce-600.webp"><img src="img/owoce-600.jpg" alt="Półmisek owoców z góry: arbuz, ananas, winogrona, śliwki" width="600" height="800"></picture></figure>
+      <figure class="plate plate-2"><picture><source type="image/webp" srcset="img/burgery-600.webp"><img src="img/burgery-600.jpg" alt="Mini burgery z sezamem" width="600" height="800"></picture></figure>
+    </div>
+  </div>
+</div>
+
+<!-- ===== OFERTA ===== -->
+<section id="oferta" aria-labelledby="oferta-h" style="padding-top:0">
+  <div class="w">
+    <div class="sec-head">
+      <h2 id="oferta-h">Na każdą okazję</h2>
+      <p>Każde menu możesz zmienić. Cenę podajemy po krótkiej rozmowie, zwykle tego samego dnia.</p>
+    </div>
+
+    <div class="offer">
+      <figure class="preview" aria-hidden="true">
+        <img src="img/podgrzewacze-1200.webp" alt="" width="1200" height="1600" loading="lazy">
+        <figcaption>I Komunia Święta</figcaption>
+      </figure>
+
+      <div>
+        <!-- Zasilane z panelu: offer.items[] { title, desc, price (opcjonalnie), href, image } -->
+        <ul class="menu" data-cms="offer.items">
+          <li><a class="item" href="#komunia" data-img="podgrzewacze"><picture><source type="image/webp" srcset="img/podgrzewacze-mini.webp"><img class="thumb" src="img/podgrzewacze-mini.jpg" alt="" width="56" height="56" loading="lazy"></picture><h3>I Komunia Święta</h3><span class="price">od 120 zł <small>/ os.</small></span><p>Menu I, II i III na półmiskach z dowozem pod wskazany adres</p></a></li>
+          <li><a class="item" href="#wesele" data-img="owoce"><picture><source type="image/webp" srcset="img/owoce-mini.webp"><img class="thumb" src="img/owoce-mini.jpg" alt="" width="56" height="56" loading="lazy"></picture><h3>Wesela i poprawiny</h3><span class="price-ask">na zapytanie</span><p>Menu weselne I, II i III. Dania gorące w nocy, obsługa kelnerska w cenie</p></a></li>
+          <li><a class="item" href="#box" data-img="salatki-box"><picture><source type="image/webp" srcset="img/salatki-box-mini.webp"><img class="thumb" src="img/salatki-box-mini.jpg" alt="" width="56" height="56" loading="lazy"></picture><h3>BOX Finger food</h3><span class="price">od 255 zł</span><p>Gotowe zestawy przekąsek dla 4–5 osób. Otwierasz i jesz</p></a></li>
+          <li><a class="item" href="tel:+48888015703" data-img="burgery"><picture><source type="image/webp" srcset="img/burgery-mini.webp"><img class="thumb" src="img/burgery-mini.jpg" alt="" width="56" height="56" loading="lazy"></picture><h3>Finger food na sztuki</h3><span class="price-ask">na zapytanie</span><p>Ponad 70 przekąsek, od pinsy po bao. Minimum 15 sztuk z rodzaju</p></a></li>
+          <li><a class="item" href="tel:+48888015703" data-img="smalec"><picture><source type="image/webp" srcset="img/smalec-mini.webp"><img class="thumb" src="img/smalec-mini.jpg" alt="" width="56" height="56" loading="lazy"></picture><h3>Szef Kuchni Poleca</h3><span class="price">od 12 zł</span><p>Zupy, zakąski i dania na porcje lub kilogramy, od 10 porcji z rodzaju</p></a></li>
+          <li><a class="item" href="tel:+48888015703" data-img="kurczak-koszyki"><picture><source type="image/webp" srcset="img/kurczak-koszyki-mini.webp"><img class="thumb" src="img/kurczak-koszyki-mini.jpg" alt="" width="56" height="56" loading="lazy"></picture><h3>Grilluj z nami</h3><span class="price-ask">na zapytanie</span><p>Grill na imprezy prywatne i firmowe: 18 propozycji, od karkówki po stek z łososia. Sprzęt i obsługa po naszej stronie</p></a></li>
+          <li><a class="item" href="tel:+48888015703" data-img="kremy-grzanki"><picture><source type="image/webp" srcset="img/kremy-grzanki-mini.webp"><img class="thumb" src="img/kremy-grzanki-mini.jpg" alt="" width="56" height="56" loading="lazy"></picture><h3>Live cooking</h3><span class="price-ask">na zapytanie</span><p>Gotowanie na oczach gości: paella, tajskie curry, crêpes Suzette. Menu układa Executive Chef</p></a></li>
+          <li><a class="item" href="tel:+48888015703" data-img="soki-przekaski"><picture><source type="image/webp" srcset="img/soki-przekaski-mini.webp"><img class="thumb" src="img/soki-przekaski-mini.jpg" alt="" width="56" height="56" loading="lazy"></picture><h3>Serwis kawowy</h3><span class="price-ask">na zapytanie</span><p>Przerwy kawowe na szkolenia i spotkania, z dowozem</p></a></li>
+          <li><a class="item" href="tel:+48888015703" data-img="cezar"><picture><source type="image/webp" srcset="img/cezar-mini.webp"><img class="thumb" src="img/cezar-mini.jpg" alt="" width="56" height="56" loading="lazy"></picture><h3>Posiłki profilaktyczne</h3><span class="price-ask">na zapytanie</span><p>Ciepłe posiłki dla pracowników, od 20 porcji. Dowóz w Wejherowie gratis</p></a></li>
+        </ul>
+        <p class="offer-more">Nie widzisz swojej okazji? <a class="link" href="tel:+48888015703">Zadzwoń, ułożymy menu razem</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOX ===== -->
+<section class="box" id="box" aria-labelledby="box-h">
+  <div class="w box-grid">
+    <figure class="box-photo"><picture>
+      <source type="image/webp" srcset="img/salatki-box-600.webp 600w, img/salatki-box-1200.webp 1200w" sizes="(min-width:1000px) 520px, 90vw">
+      <img src="img/salatki-box-1200.jpg" srcset="img/salatki-box-600.jpg 600w, img/salatki-box-1200.jpg 1200w" sizes="(min-width:1000px) 520px, 90vw" alt="Box z mini sałatkami: tabbouleh z granatem, sałatka ryżowa z maliną, burak z fetą" width="1200" height="1600" loading="lazy">
+    </picture></figure>
+    <div>
+      <p class="eyebrow">Najczęściej zamawiane</p>
+      <h2 id="box-h">BOX Finger food</h2>
+      <p class="lead">Przywozimy gotowy box, Ty zdejmujesz wieczko. Każdy wystarcza dla 4–5 osób.</p>
+      <!-- Zasilane z panelu: boxes[] { name, price } -->
+      <ul class="boxes" data-cms="boxes">
+        <li><span>Bestseller</span><span>255 zł</span></li>
+        <li><span>Mix</span><span>255 zł</span></li>
+        <li><span>Party Mix</span><span>255 zł</span></li>
+        <li><span>Mini bagietki</span><span>255 zł</span></li>
+        <li><span>Sałatkowy</span><span>255 zł</span></li>
+        <li><span>Słodki</span><span>289 zł</span></li>
+      </ul>
+      <p class="terms">Zamów co najmniej 3 dni wcześniej. Minimum to 2 boxy.</p>
+      <a class="btn" href="tel:+48888015703"><svg aria-hidden="true"><use href="#ico-tel"/></svg>Zamów telefonicznie</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU NA UROCZYSTOŚCI ===== -->
+<section id="uroczystosci" aria-labelledby="uro-h">
+  <div class="w">
+    <div class="sec-head">
+      <h2 id="uro-h">Menu na uroczystości</h2>
+      <p>Po trzy gotowe menu na komunię i wesele. W każdym możesz wymienić dowolne danie.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Rodzaj uroczystości">
+      <button class="tab" role="tab" id="t-komunia" aria-controls="komunia" aria-selected="true">I Komunia Święta</button>
+      <button class="tab" role="tab" id="t-wesele" aria-controls="wesele" aria-selected="false" tabindex="-1">Wesele i poprawiny</button>
+    </div>
+
+    <!-- Zasilane z panelu: communion.plans[] { name, price, items[] } -->
+    <div class="tabpanel" id="komunia" role="tabpanel" aria-labelledby="t-komunia">
+      <p class="panel-lead">Ceny za osobę. Dania na półmiskach z dowozem pod wskazany adres.</p>
+      <div class="plans" data-cms="communion.plans">
+        <article class="plan"><h3>Menu I</h3><p class="amount">120 zł<small>/ os.</small></p>
+          <ul><li>1 zupa, 3 dania główne</li><li>2 dodatki i 2 surówki</li><li>2 porcje mięsa na osobę</li></ul></article>
+        <article class="plan"><h3>Menu II</h3><p class="amount">145 zł<small>/ os.</small></p>
+          <ul><li>1 zupa, 4 dania główne</li><li>3 dodatki i 3 surówki</li><li>2,5 porcji mięsa na osobę</li></ul></article>
+        <article class="plan"><h3>Menu III</h3><p class="amount">160 zł<small>/ os.</small></p>
+          <ul><li>2 zupy, 4 dania, w tym łosoś lub kaczka</li><li>3 dodatki i 3 surówki</li><li>2,5 porcji mięsa na osobę</li></ul></article>
+      </div>
+      <p class="plans-note">Przekąski i sałatki: +85 zł/os. Kolacja: 420 zł dla 20 osób. <a class="link" href="tel:+48888015703">Zapytaj o wolny termin</a></p>
+    </div>
+
+    <!-- Zasilane z panelu: wedding.plans[] { name, serving, price (opcjonalnie), items[] } -->
+    <div class="tabpanel" id="wesele" role="tabpanel" aria-labelledby="t-wesele" hidden>
+      <p class="panel-lead">Cenę wesela podajemy po rozmowie. W każdym menu: powitanie winem musującym i chlebem weselnym, pieczywo, kawa i herbata bez ograniczeń, obsługa kelnerska.</p>
+      <div class="plans" data-cms="wedding.plans">
+        <article class="plan"><h3>Menu weselne I</h3><p class="serving">Danie główne podane na talerzu</p>
+          <ul><li>Zupa: 1 z 3</li><li>Danie główne: 2 z 7</li><li>Dodatki: 2 z 5</li><li>Zimne zakąski: 10 z 14, 5 porcji na osobę</li><li>Dania gorące w nocy: 2 z 5</li></ul></article>
+        <article class="plan"><h3>Menu weselne II</h3><p class="serving">Dania główne na platerach</p>
+          <ul><li>Zupa: 1 z 4</li><li>Dania główne: 4 z 9, 2 porcje mięsa na osobę</li><li>Dodatki: 2 z 8</li><li>Zimne zakąski: 10 z 18, 5 porcji na osobę</li><li>Dania gorące w nocy: 2 z 7</li></ul></article>
+        <article class="plan"><h3>Menu weselne III</h3><p class="serving">Platery i najszerszy wybór</p>
+          <ul><li>Zupa: 1 z 4, w tym krem ze szparagów</li><li>Dania główne: 4 z 13, 2 porcje mięsa na osobę</li><li>Dodatki: 2 z 8</li><li>Zimne zakąski: 10 z 18, 5 porcji na osobę</li><li>Dania gorące w nocy: 2 z 7</li></ul></article>
+      </div>
+      <p class="plans-note">Poprawiny: danie gorące, kawa, herbata i pieczywo. Termin rezerwujemy za zadatkiem 2000 zł. <a class="link" href="tel:+48888015703">Zapytaj o wolny termin</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REALIZACJE ===== -->
+<section id="realizacje" aria-labelledby="real-h">
+  <div class="w">
+    <div class="sec-head">
+      <h2 id="real-h">Z naszych stołów</h2>
+      <p>Zdjęcia z ostatnich realizacji. Więcej na <a class="link" href="https://facebook.com/tamarillo.wejherowo" rel="noopener">Facebooku</a>.</p>
+    </div>
+    <!-- Zasilane z panelu: gallery[] { src, alt, caption } -->
+    <div class="gallery" data-cms="gallery">
+      <figure class="g"><picture><source type="image/webp" srcset="img/soki-przekaski-600.webp 600w, img/soki-przekaski-1200.webp 1200w" sizes="(min-width:1000px) 400px, 50vw"><img src="img/soki-przekaski-600.jpg" alt="Soki w butelkach i przekąski z jadalnymi kwiatami" width="600" height="800" loading="lazy"></picture><figcaption>Soki tłoczone i przekąski z jadalnymi kwiatami</figcaption></figure>
+      <figure class="g"><picture><source type="image/webp" srcset="img/croissanty-pastrami-600.webp 600w, img/croissanty-pastrami-1200.webp 1200w" sizes="(min-width:1000px) 400px, 50vw"><img src="img/croissanty-pastrami-600.jpg" alt="Croissanty z pastrami i rukolą" width="600" height="800" loading="lazy"></picture><figcaption>Croissanty z pastrami i rukolą</figcaption></figure>
+      <figure class="g"><picture><source type="image/webp" srcset="img/kremy-grzanki-600.webp 600w, img/kremy-grzanki-1200.webp 1200w" sizes="(min-width:1000px) 400px, 50vw"><img src="img/kremy-grzanki-600.jpg" alt="Kubeczki z kremem serowym i grzankami" width="600" height="800" loading="lazy"></picture><figcaption>Krem serowy z chrupiącą grzanką</figcaption></figure>
+      <figure class="g"><picture><source type="image/webp" srcset="img/podgrzewacze-600.webp 600w, img/podgrzewacze-1200.webp 1200w" sizes="(min-width:1000px) 400px, 50vw"><img src="img/podgrzewacze-600.jpg" alt="Pierogi z pieczarkami i pieczone ziemniaki w podgrzewaczach" width="600" height="800" loading="lazy"></picture><figcaption>Pierogi z pieczarkami i ziemniaki z rozmarynem</figcaption></figure>
+      <figure class="g"><picture><source type="image/webp" srcset="img/muffiny-600.webp 600w, img/muffiny-1200.webp 1200w" sizes="(min-width:1000px) 400px, 50vw"><img src="img/muffiny-600.jpg" alt="Kanapki na angielskich muffinach z rzodkiewką" width="600" height="800" loading="lazy"></picture><figcaption>Muffiny z pastą i rzodkiewką</figcaption></figure>
+      <figure class="g"><picture><source type="image/webp" srcset="img/salatki-figi-600.webp 600w, img/salatki-figi-1200.webp 1200w" sizes="(min-width:1000px) 400px, 50vw"><img src="img/salatki-figi-600.jpg" alt="Mini sałatki: cezar, burak z fetą, sałatka z figą" width="600" height="800" loading="lazy"></picture><figcaption>Mini sałatki: cezar, burak z fetą, figa</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- TODO (audyt 2.6/2.7): sekcja z 2–3 prawdziwymi opiniami (imię, okazja, data) i sekcja „Kto gotuje” ze zdjęciem szefa kuchni – czekają na materiały od klienta. -->
+
+<!-- ===== KONTAKT ===== -->
+<section class="contact" id="kontakt" aria-labelledby="kontakt-h">
+  <div class="w">
+    <h2 id="kontakt-h">Porozmawiajmy o Twoim przyjęciu</h2>
+    <p class="how">Powiedz, jaka okazja, kiedy i ilu gości. Dostaniesz propozycję menu z ceną, a w dniu przyjęcia przywieziemy wszystko na czas.</p>
+    <a class="bigphone" href="tel:+48888015703">888 015 703</a>
+    <svg class="swash swash-lg" aria-hidden="true"><use href="#swash"/></svg>
+    <address class="details">
+      <a href="mailto:tamarillo.wwo@wp.pl" data-cms="contact.email">tamarillo.wwo@wp.pl</a>
+      <span>ul. Morska 9A, 84-200 Wejherowo</span>
+      <!-- TODO: godziny kontaktu (contact.hours) po potwierdzeniu z klientem -->
+    </address>
+
+    <div class="callback">
+      <p>Nie możesz teraz rozmawiać? Zostaw numer, oddzwonimy.</p>
+      <!-- Endpoint do podpięcia z panelem. Minimum danych: imię, telefon, okazja. -->
+      <form class="cb-form" id="callback" action="/api/callback" method="post" novalidate>
+        <div class="f">
+          <label for="cb-name">Imię</label>
+          <input id="cb-name" type="text" name="name" autocomplete="given-name" required aria-describedby="cb-name-err">
+          <span class="f-err" id="cb-name-err"></span>
+        </div>
+        <div class="f">
+          <label for="cb-phone">Telefon</label>
+          <input id="cb-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" required pattern="[0-9 +()\-]{9,}" aria-describedby="cb-phone-err">
+          <span class="f-err" id="cb-phone-err"></span>
+        </div>
+        <div class="f">
+          <label for="cb-occ">Okazja</label>
+          <select id="cb-occ" name="occasion"><option>Komunia</option><option>Wesele</option><option>BOX-y lub przekąski</option><option>Dla firmy</option><option>Inna</option></select>
+          <span class="f-err"></span>
+        </div>
+        <button class="btn btn-gold" type="submit">Oddzwońcie</button>
+        <label class="consent"><input type="checkbox" name="consent" required><span>Zgadzam się na kontakt telefoniczny w sprawie zamówienia. Dane przetwarzamy tylko w tym celu (<a href="/rodo">RODO</a>).</span></label>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="w">
+    <div class="foot">
+      <div>
+        <picture><source srcset="img/logo-tamarillo.webp" type="image/webp"><img class="foot-logo" src="img/logo-tamarillo-560.png" alt="Tamarillo Catering by Maciej Nikielski" width="560" height="508" loading="lazy"></picture>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li><a href="tel:+48888015703">888 015 703</a></li>
+          <li><a href="mailto:tamarillo.wwo@wp.pl">tamarillo.wwo@wp.pl</a></li>
+          <li>ul. Morska 9A, Wejherowo</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Gdzie dowozimy</h3>
+        <p>Wejherowo, Reda, Rumia, powiat wejherowski, Gdynia, Sopot i Gdańsk</p>
+      </div>
+      <div>
+        <h3>Informacje</h3>
+        <ul>
+          <li><a href="/regulamin">Regulamin</a></li>
+          <li><a href="/rodo">RODO i alergeny</a></li>
+          <li><a href="https://facebook.com/tamarillo.wejherowo" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">CATERING TAMARILLO Joanna Nikielska, ul. Morska 9A, 84-200 Wejherowo, NIP 5861622125</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn" href="tel:+48888015703"><svg aria-hidden="true"><use href="#ico-tel"/></svg>Zadzwoń: 888 015 703</a>
+</div>
+
+<script>
+/* Stan nagłówka i paska „Zadzwoń”: zmiana bez animacji.
+   Bez JS oba elementy są po prostu widoczne. */
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var root=document.documentElement;
+  var logo=document.querySelector('.hero-logo'), cta=document.querySelector('.hero-cta');
+  if(logo) new IntersectionObserver(function(e){root.classList.toggle('logo-in-view',e[0].isIntersecting)},{rootMargin:'-76px 0px 0px 0px'}).observe(logo);
+  if(cta) new IntersectionObserver(function(e){root.classList.toggle('cta-in-view',e[0].isIntersecting)}).observe(cta);
+})();
+
+/* Podgląd zdjęcia przy ofercie (desktop): przenikanie po najechaniu lub fokusie */
+(function(){
+  var fig=document.querySelector('.preview'); if(!fig) return;
+  var img=fig.querySelector('img'), cap=fig.querySelector('figcaption'), cur='podgrzewacze';
+  function show(el){
+    var key=el.dataset.img; if(!key||key===cur) return; cur=key;
+    var next=new Image(); next.src='img/'+key+'-1200.webp';
+    img.setAttribute('data-fading','');
+    next.onload=function(){ img.src=next.src; cap.textContent=el.querySelector('h3').textContent; img.removeAttribute('data-fading'); };
+  }
+  document.querySelectorAll('.item').forEach(function(el){
+    el.addEventListener('mouseenter',function(){show(el)});
+    el.addEventListener('focus',function(){show(el)});
+  });
+})();
+
+/* Zakładki Komunia / Wesele; linki #komunia i #wesele otwierają właściwą zakładkę */
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function select(t,focus){
+    tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});
+    if(focus)t.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t)});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0; if(!d)return;
+      e.preventDefault(); select(tabs[(i+d+tabs.length)%tabs.length],true);
+    });
+  });
+  function fromHash(){
+    var id=location.hash.slice(1), t=document.getElementById('t-'+id);
+    if(t){select(t);document.getElementById('uroczystosci').scrollIntoView();}
+  }
+  document.querySelectorAll('a[href="#komunia"],a[href="#wesele"]').forEach(function(a){
+    a.addEventListener('click',function(e){var t=document.getElementById('t-'+a.getAttribute('href').slice(1));if(t){e.preventDefault();history.replaceState(null,'',a.getAttribute('href'));select(t);document.getElementById('uroczystosci').scrollIntoView();}});
+  });
+  fromHash();
+})();
+
+/* Formularz „Oddzwońcie”: komunikat przy polu, aria-invalid, fokus na pierwszym błędzie.
+   Wysyłka do /api/callback po podpięciu panelu. */
+(function(){
+  var form=document.getElementById('callback'); if(!form) return;
+  var msg=form.querySelector('.form-msg');
+  var name=form.elements.name, phone=form.elements.phone, consent=form.elements.consent;
+  function setErr(input,text){
+    var el=document.getElementById(input.getAttribute('aria-describedby'));
+    input.setAttribute('aria-invalid',text?'true':'false'); if(el) el.textContent=text;
+  }
+  name.addEventListener('input',function(){ if(name.value.trim()) setErr(name,''); });
+  phone.addEventListener('input',function(){ if(phone.checkValidity()) setErr(phone,''); });
+  consent.addEventListener('change',function(){ consent.closest('.consent').classList.toggle('invalid',!consent.checked&&msg.dataset.state==='error'); });
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var first=null;
+    if(!name.value.trim()){ setErr(name,'Wpisz imię, żebyśmy wiedzieli, do kogo dzwonimy.'); first=first||name; } else setErr(name,'');
+    if(!phone.checkValidity()){ setErr(phone,'Wpisz numer telefonu, co najmniej 9 cyfr.'); first=first||phone; } else setErr(phone,'');
+    var noConsent=!consent.checked; consent.closest('.consent').classList.toggle('invalid',noConsent);
+    if(noConsent) first=first||consent;
+    if(first){
+      msg.dataset.state='error';
+      msg.textContent=noConsent&&first===consent?'Zaznacz zgodę na kontakt, żebyśmy mogli oddzwonić.':'Popraw zaznaczone pola.';
+      first.focus(); return;
+    }
+    msg.dataset.state='ok';
+    msg.textContent='Dziękujemy. Oddzwonimy na numer '+phone.value.trim()+'.';
+    form.reset(); consent.closest('.consent').classList.remove('invalid');
+  });
+})();
+</script>
+</body>
+</html>
